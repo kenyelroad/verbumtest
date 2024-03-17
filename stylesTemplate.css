@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --gray-950: #030712;
+
+  --orange-500: #f97316;
+  --orange-700: #c2410c;
+}
+
+body {
+  background: var(--gray-950);
+  color: var(--gray-50);
+  -webkit-font-smoothing: antialiased;
+  max-width: 80rem;
+  margin-inline: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Handlee", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+header img {
+  width: 100%;
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.text_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 2rem;
+}
+
+p {
+  text-align: center;
+}
+
+.title_effect {
+  color: var(--orange-500);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+}
+
+button {
+  border-radius: 0.5rem;
+  background: var(--orange-700);
+  cursor: pointer;
+  transition: filter 0.2s;
+  border: none;
+}
+
+a {
+  display: flex;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: var(--gray-200);
+  font-weight: 700;
+  width: 100%;
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
